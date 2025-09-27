@@ -7,6 +7,7 @@ Code from the FreeBSD project interpreted to be compiled under Linux with no dep
 ## Compile and install
 
 > make
+> 
 > make install
 
 ## Usage
