@@ -256,7 +256,7 @@ initcg(int cylno, time_t utime)
 	 */
 	savedactualloc = sblock.fs_sblockactualloc;
 	sblock.fs_sblockactualloc =
-	    (fsbtodb(&sblock, cgsblock(&sblock, cylno))) /sectorsize;
+	    (fsbtodb(&sblock, cgsblock(&sblock, cylno))) *sectorsize;
 
 	if (sbwrite(0) != 0)
 		err(1, "sbwrite:");
