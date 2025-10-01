@@ -260,7 +260,7 @@ restart:
 	sblock.fs_iblkno = sblock.fs_cblkno + sblock.fs_frag;
 	sblock.fs_maxfilesize = sblock.fs_bsize * UFS_NDADDR - 1;
 
-	int64_t sizepb, i;
+	int64_t sizepb, i = 0;
 	for (sizepb = sblock.fs_bsize; i < UFS_NIADDR; i++) {
 		sizepb *= NINDIR(&sblock);
 		sblock.fs_maxfilesize += sizepb;
