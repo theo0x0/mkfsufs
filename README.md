@@ -4,6 +4,8 @@ This utility formats a UFS filesystem partition from a Linux system.
 
 Code from the FreeBSD project interpreted to be compiled under Linux with no dependencies  
 
+Arch User Repository: https://aur.archlinux.org/packages/mkfsufs
+
 ## Compile and install
 
 > make
